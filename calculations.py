@@ -6,7 +6,7 @@ def get_following_distance(current_speed):
     if current_speed < 55:
         number_of_seconds = 2
     elif current_speed > 85:
-        number_of_seconds = 4
+        number_of_seconds = 4 
     else:
         # Smooth transition between 2 and 4 seconds for speeds between 60 and 80 mph
         number_of_seconds = 2 + (current_speed - 55) * (4 - 2) / (85 - 55)
